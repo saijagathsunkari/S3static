@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai's Nightclub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for this specific page */
+        body {
+            background-color: #1a1a1a;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .hero {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+        .cta-button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff8c42;
+        }
+        .events {
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 0;
+        }
+        .event-card {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 5px solid #ff6600;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sai's Nightclub</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Experience Nightlife like Never Before</h2>
+        <p>Join us for an unforgettable night of music, dancing, and excitement!</p>
+        <a href="#" class="cta-button">Get Tickets</a>
+    </section>
+    
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <img src="event1.jpg" alt="Event 1">
+            <h3>Summer Groove Party</h3>
+            <p>Date: July 15th, 2023</p>
+        </div>
+        <div class="event-card">
+            <img src="event2.jpg" alt="Event 2">
+            <h3>Neon Nights</h3>
+            <p>Date: August 5th, 2023</p>
+        </div>
+    </section>
+
+    <div class="profile-image">
+        <img src="profile.png" alt="Profile Image">
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Sai's Nightclub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
